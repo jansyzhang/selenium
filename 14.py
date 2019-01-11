@@ -2,7 +2,6 @@
 """
 Created on Thu Jan 10 17:05:58 2019
 
-@author: zhangxin
 """
 
 '''from selenium import webdriver
