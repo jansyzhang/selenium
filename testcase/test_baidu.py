@@ -9,7 +9,7 @@ import unittest
 import time
 
 class MyTest(unittest.TestCase):
-    
+    '''search testing'''
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.maximize_window()
@@ -17,6 +17,7 @@ class MyTest(unittest.TestCase):
         self.base_url = "https://www.baidu.com"
         
     def test_baidu(self):
+        ''' search key'''
         driver = self.driver
         driver.get(self.base_url + '/')
         driver.find_element_by_id("kw").clear()
@@ -30,4 +31,10 @@ class MyTest(unittest.TestCase):
         self.driver.quit()
         
 if __name__ == "__main__":
-    unittest.main()        
+    #unittest.main()   
+    testunit = unittest.TestSuite()
+    testunit.addTest(MyTest('test_baidu'))
+    
+
+    
+ 
