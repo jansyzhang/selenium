@@ -15,12 +15,12 @@ def send_email(file_new):
     f.close()
     
     smtpsever = 'smtp.qq.com'
-    user = '1294300118@qq.com'
-    password = 'bpqsojjqliyqbaee'
+    user = 'xxxxxxx@qq.com'
+    password = 'xxxxxxx'
 
     #发送邮箱,接收邮箱
-    sender = '1294300118@qq.com'
-    receiver = 'jansyjm@163.com'
+    sender = 'xxxxxx@qq.com'
+    receiver = 'xxxxxxxxx@163.com'
 
     msg = MIMEText(mail_body, 'html', 'utf-8')
     msg['Subject'] = Header("auto test result", 'utf-8')
